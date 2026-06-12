@@ -208,6 +208,7 @@ export default function SolarSystem({ selectedBody, setSelectedBody, timeScale, 
   const transitionRef = useRef({ progress: 1 });
   const previousTarget = useRef(new THREE.Vector3());
   const previousCameraPos = useRef(new THREE.Vector3());
+  const positionsRef = useRef({});
 
   useEffect(() => {
     if (isFlightMode) return;
